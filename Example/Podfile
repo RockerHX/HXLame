@@ -2,8 +2,4 @@ use_frameworks!
 
 target 'HXLame_Example' do
   pod 'HXLame', :path => '../'
-
-  target 'HXLame_Tests' do
-    inherit! :search_paths
-  end
 end
