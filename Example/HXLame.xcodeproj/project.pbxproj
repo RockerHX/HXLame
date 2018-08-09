@@ -14,6 +14,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		C6862B01211C52530093D652 /* lame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6862B00211C52530093D652 /* lame.framework */; };
 		D53F670F7FD003545D49DE48 /* Pods_HXLame_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF636D06328C3A7961AAE67C /* Pods_HXLame_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		97EE3746CF74F409B14A2E06 /* Pods-HXLame_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HXLame_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HXLame_Example/Pods-HXLame_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C6862B00211C52530093D652 /* lame.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = lame.framework; path = Frameworks/lame.framework; sourceTree = "<group>"; };
 		E492F678BAE074F5CCF32C2C /* Pods_HXLame_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HXLame_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5588841C21D6A111DFCAF73 /* HXLame.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HXLame.podspec; path = ../HXLame.podspec; sourceTree = "<group>"; };
 		EF636D06328C3A7961AAE67C /* Pods_HXLame_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HXLame_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,6 +57,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				446377FD4FC4AFCC113696B6 /* Pods_HXLame_Example.framework in Frameworks */,
+				C6862B01211C52530093D652 /* lame.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +156,7 @@
 		B80BF41A8AAE02BDD680C50A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C6862B00211C52530093D652 /* lame.framework */,
 				E492F678BAE074F5CCF32C2C /* Pods_HXLame_Example.framework */,
 				EF636D06328C3A7961AAE67C /* Pods_HXLame_Tests.framework */,
 			);
@@ -498,6 +502,10 @@
 			baseConfigurationReference = 97EE3746CF74F409B14A2E06 /* Pods-HXLame_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = HXLame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -513,6 +521,10 @@
 			baseConfigurationReference = 27B17C8C59EB742BBB0E5B77 /* Pods-HXLame_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = HXLame/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
