@@ -1,5 +1,7 @@
 PODS:
-  - HXLame (0.1.0)
+  - HXLame (0.1.0):
+    - HXLame/lame (= 0.1.0)
+  - HXLame/lame (0.1.0)
 
 DEPENDENCIES:
   - HXLame (from `../`)
@@ -9,7 +11,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HXLame: e53115505ef0f99b92a78583f2ee1e72c92df050
+  HXLame: 4ce6b59eb79463b0075c5caa545e07f29355f737
 
 PODFILE CHECKSUM: 73754fa82eb61cf686f93b10b56e3a2185c27277
 
