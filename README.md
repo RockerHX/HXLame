@@ -1,4 +1,5 @@
 # HXLame
+HXLame is iOS library build on PCM to Mp3 library - lame.
 
 [![CI Status](https://img.shields.io/travis/rockerhx@gmail.com/HXLame.svg?style=flat)](https://travis-ci.org/rockerhx@gmail.com/HXLame)
 [![Version](https://img.shields.io/cocoapods/v/HXLame.svg?style=flat)](https://cocoapods.org/pods/HXLame)
