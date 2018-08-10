@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        guard let path = Bundle.main.path(forResource: "input", ofType: "wav"), let url = URL(string: path) else { return }
+        guard let path = Bundle.main.path(forResource: "input", ofType: "caf"), let url = URL(string: path) else { return }
         guard let documentPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).last,
               let mp3URL = URL(string: documentPath + "/output.mp3")
         else { return }
