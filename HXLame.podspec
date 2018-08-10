@@ -22,13 +22,11 @@ HXLame is iOS library build on PCM to Mp3 library - lame. It can easy to take PC
                        DESC
 
     s.homepage         = 'https://github.com/RockerHX/HXLame'
-    # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
     s.author           = { 'rockerhx@gmail.com' => 'rockerhx@gmail.com' }
-    s.source           = { :git => 'https://github.com/rockerhx@gmail.com/HXLame.git', :tag => s.version.to_s }
-    # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+    s.source           = { :git => 'https://github.com/RockerHX/HXLame.git', :tag => s.version.to_s }
 
-    s.ios.deployment_target = '8.0'
+    s.ios.deployment_target = '9.0'
 
     s.source_files = 'HXLame/Classes/**/*'
     s.prepare_command = <<-EOF
